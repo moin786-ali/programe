@@ -3,21 +3,37 @@
 <head>
 	<title>Project|Bolte</title>
 	<link rel="icon" href="sattap ">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body><style type="text/css">
 	*{
 		margin:0px;
+		zoom: 97%;
+	}
+	.child-container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: fixed;
+		width: 100%;
 	}
 	.container{
-	background-color: #F4DBE1;
-		padding: 20px;
 		display: flex;
-		justify-content:space-around;
+		align-items: center;
+		justify-content: space-between;
+		position: fixed;
+		background-color: red;
+		width: 100%;
+		height: 8vh;
 	}
 	.button{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;	
+		cursor: pointer;
 		background-color:#E9C037;
-		width:100px;
-		height: 30px;
+		height: 5%;
 		border-radius: 30px 30px;
 	}
 	.container a{
@@ -25,20 +41,65 @@
 		text-shadow: 2px 2px #F787A6;
 		font-size: 20px;
 	}
-	.para{
+	.papa{
+		padding: 100px;
+		/*padding: 0px;*/
+		display: flex;
+		justify-content: center;
 		background-image: url(img/cartoon.jpg);
-		height:220vh;
 		background-size: 100% 100%;
 		background-attachment:fixed;
 		background-repeat: no-repeat;
 	}
+	/*@media only screen and (max-width: 600px) {
+	  .papa {
+		    background-size: 100% 84%;
+	  }
+	}*/
+	.papa .child{
+		width: 50%;
+		padding: 50px;
+		background-color: #7e8aabb8;
+	}
+	@media only screen and (max-width: 600px) {
+	  .papa .child {
+	  		margin-top: 73px;
+		    width: 70%;
+	  }
+	  .papa {
+	  	padding: 0px;
+	  }
+	  .child-container{
+	  	display: none;
+	  }
+	  .custom-select{
+			display: block !important;
+		}
+	}
+
+	.input-box {
+		text-align: center;
+	}
+	.input-box .input-child-1 input{
+		width: 70%;
+		height: 30px;
+		border-radius: 10px;
+		border: none;
+		padding-left: 10px;
+		margin-top: 15px;
+	}
+
+
+
+	.radio-btn{
+		margin-top: 20px;
+	}
 	.para1{
-		margin-left: 350px;
-		margin-right:350px;
-		height: 210vh;
-		border-radius: 5px;
-		border-style:none;
-		background-color:#182B49;
+		margin-bottom: 50px;
+		margin-top: 50px;
+		background: #182b49;
+		width: 50%;
+		text-align: center;
 	}
 	.para1 input{
 		margin-left:170px;
@@ -121,179 +182,170 @@
 		text-align: center;
 
 	}
+	.custom-select{
+		display: none;
+	}
 </style>
 	<div class="container">
-		<p style="font-size: 30px; font-family: fantasy; color: #2B6992"><strong>Part Time KGN Design Program</strong></p>
-	<a href="https://kenzie.ucsd.edu/ux-design/what-is-ux-design">What is KGN Design</a>
-	<a href="https://kenzie.ucsd.edu/ux-design/what-is-ux-design">Program</a>
-	<a href="https://kenzie.ucsd.edu/ux-design/what-is-ux-design">About</a>
-	<a href="https://kenzie.ucsd.edu/ux-design/what-is-ux-design">Support</a>
-	<a href="https://kenzie.ucsd.edu/ux-design/what-is-ux-design">FAQ	</a>
-	<button class="button" style="color:blue; cursor: pointer;">Apply</button>
-  </a>
+		<div class="child-container">
+			<p><strong>Part Time KGN Design Program</strong></p>
+			<a href="https://kenzie.ucsd.edu/ux-design/what-is-ux-design">What is KGN Design</a>
+			<a href="https://kenzie.ucsd.edu/ux-design/what-is-ux-design">Program</a>
+			<a href="https://kenzie.ucsd.edu/ux-design/what-is-ux-design">About</a>
+			<a href="https://kenzie.ucsd.edu/ux-design/what-is-ux-design">Support</a>
+			<a href="https://kenzie.ucsd.edu/ux-design/what-is-ux-design">FAQ	</a>
+			<button class="button-nav">Apply</button>
+		</div>
+		<div class="custom-select">
+			<select id="cars" name="cars">
+		    <option value="volvo">What is KGN Design</option>
+		    <option value="saab">Program</option>
+		    <option value="fiat">About</option>
+		    <option value="audi">Support</option>
+		    <option value="audi">FAQ</option>
+		  </select>
+		</div>	
 	</div>
-	<div class="para">
-		<div class="para1">
-		<center><h1 style="text-decoration: underline; color:#FFCE3D; text-shadow: 2px 2px #F787A6;">KGN DELHI Diego</h1>
-		<h2 style="color: #FFCE3D"> Extension</h2><br>
-		<h2 style="font-family:fantasy; text-shadow: 1px 1px #F787A6; ">INDIA</h2><br>
-		<h1 style="font-family:sans-serif; text-shadow: 2px 2px #F787A6;"> Part-Time KGN Design Program</h1><br>
-		<h3 style="font-size: 25px; color:white;"> Powered by Moin Academy</h3><br>
-		<p style="color: white; font-family: sans-serif;"> Want an exciting career in KGN Design? The University of Cannaught Palace Diego Extension has partnered with Kenzie Academy to launch a Part-Time KGN Design program that you can attend from home.</p><br>
-<p style="color: white; font-family: sans-serif;">Learn directly from industry practitioners, connect with tech and KGN leaders from Silicon Valley and across the U.S., and network with classmates from all over the world. This program incorporates the academic rigor of UC San Diego Extension with the industry experience of Kenzie Academy.</p><br>
-<p style="color: white; font-family: sans-serif;">As a KGN designer with an understanding of user-centric design processes, you will build your KGN portfolio and tap into the growing tech economy to help drive results and create winning products.</p></center><br><br> 
 
+	<div class="papa">
+		<div class="child">
+			<div class="child-moin">
+				<h1 style="text-decoration: underline; color:#FFCE3D; text-shadow: 2px 2px #F787A6;">KGN DELHI Diego</h1>
+				<h2 style="color: #FFCE3D"> Extension</h2><br>
+				<h2 style="font-family:fantasy; text-shadow: 1px 1px #F787A6; ">INDIA</h2><br>
+				<h1 style="font-family:sans-serif; text-shadow: 2px 2px #F787A6;"> Part-Time KGN Design Program</h1><br>
+				<h3 style="font-size: 25px; color:white;"> Powered by Moin Academy</h3><br>
+				<p style="color: white; font-family: sans-serif;"> Want an exciting career in KGN Design? The University of Cannaught Palace Diego Extension has partnered with Kenzie Academy to launch a Part-Time KGN Design program that you can attend from home.</p><br>
+				<p style="color: white; font-family: sans-serif;">Learn directly from industry practitioners, connect with tech and KGN leaders from Silicon Valley and across the U.S., and network with classmates from all over the world. This program incorporates the academic rigor of UC San Diego Extension with the industry experience of Kenzie Academy.</p><br>
+				<p style="color: white; font-family: sans-serif;">As a KGN designer with an understanding of user-centric design processes, you will build your KGN portfolio and tap into the growing tech economy to help drive results and create winning products.</p><br><br> 
+			</div>
+			<div class="input-box">
+				<div>
+					<div class="input-child-1">
+						<input type="text" placeholder="First Name">
+						<input type="text" placeholder="Last Name">
+						<input type="text" placeholder="Email">
+						<input type="text" placeholder="Phone number">
+					</div>
+					<div class="radio-btn">
+						<div>
+							  <p>Please select your gender:</p>
+							  <input type="radio" id="male" name="gender" value="male">
+							  <label for="male">Yes</label><br>
+							  <input type="radio" id="female" name="gender" value="female">
+							  <label for="female">No</label><br>
+						</div>
 
-<pre><input type="text" placeholder="First Name">
+						<div>
+							  <p>Please select your gender:</p>
+							  <input type="radio" id="male" name="gender" value="male">
+							  <label for="male">Yes</label><br>
+							  <input type="radio" id="female" name="gender" value="female">
+							  <label for="female">No</label><br>
+						</div>
+						<div>
+							  <p>Please select your gender:</p>
+							  <input type="radio" id="male" name="gender" value="male">
+							  <label for="male">Yes</label><br>
+							  <input type="radio" id="female" name="gender" value="female">
+							  <label for="female">No</label><br>
+						</div>
+					</div>
+					<div>
+						<button class="button">submit</button>
+					</div>
+				</div>
+			</div>
 
-
-<input type="text" placeholder="Last Name">
-
-
-<input type="text" placeholder="Email">
-
-
-<input type="text" placeholder="Phone number"></pre><br><br>
-
-<span style="color:white; font-family: sans-serif;">I have a College Degree</span><br><br>
-<input type="radio" id="male" name="gender" value="male">
-  <label for="male">Yes</label><br><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">No</label><br><br>
-  <span style="color:white; font-family: sans-serif;">I have at least 1 year of work experience
-</span><br><br>
-<input type="radio" id="male" name="gender" value="male">
-  <label for="male">Yes</label><br><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">No</label><br><br>
-  <span style="color:white; font-family: sans-serif;">The program instruction is in English. Are you fluent in the English language?
-</span><br>
-<input type="radio" id="male" name="gender" value="male">
-  <label for="male">Yes</label><br><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">No</label><br><br>
-  <span style="color:white; font-family: sans-serif;">Which payment option do you prefer for this program?
-</span><br><br>
-<input type="radio" id="male" name="gender" value="male">
-  <label for="male">Pay Upfront</label><br><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Payment Plan</label><br><br><br>
-<button class="button" style="color:blue;font-family: georgia; font-size:20px; cursor: pointer;">Learn More</button>
-</div>
+		</div>
 	</div>
-	<div class="para2">
-		<p style="color: white; font-family: sans-serif; font-size: 25px;"> Students have the opportunity to learn in real-world scenarios so you’ll be job-ready when you graduate. Our students learn the user interface and user experience design skills needed to understand and build user-centric interfaces for apps, platforms, and websites that drive real results.
 
-</p>
+	<!-- <div class="para2">
+		<p style="color: white; font-family: sans-serif; font-size: 25px;"> Students have the opportunity to learn in real-world scenarios so you’ll be job-ready when you graduate. Our students learn the user interface and user experience design skills needed to understand and build user-centric interfaces for apps, platforms, and websites that drive real results.</p>
 	</div>
+
 	<div class="img">
-		<pre><h1 style="color: #182B49;font-family:times;font-size: 50px; ">KGN DESIGN</h1>
-<h3>Become a KGN Designer in 24 Weeks</h3>
-<ul style="font-size: 15px;">Online, Part-Time UX Design Program starting the week of November 24th</ul>
-<li>You'll build applications to solve real-world problems and develop a firm 
-understanding of the rules for UI and UX design.</li>
-<li>You’ll take your skills beyond just UX design and learn to work on teams and within
- various design systems.</li>
-<li>You’ll receive a Certificate of Completion from UC San Diego Extension, showcasing
- your accomplishments and certifying that you're job-ready.</li>
-<li>You’ll benefit from an array of Student Success support to identify your goals, coach 
-you along the way, and celebrate your wins.</li>
+		<h1 style="color: #182B49;font-family:times;font-size: 50px; ">KGN DESIGN</h1>
+		<h3>Become a KGN Designer in 24 Weeks</h3>
+		<ul style="font-size: 15px;">Online, Part-Time UX Design Program starting the week of November 24th</ul>
+		<li>You'll build applications to solve real-world problems and develop a firm understanding of the rules for UI and UX design.</li>
+		<li>You’ll take your skills beyond just UX design and learn to work on teams and within various design systems.</li>
+		<li>You’ll receive a Certificate of Completion from UC San Diego Extension, showcasing your accomplishments and certifying that you're job-ready.</li>
+		<li>You’ll benefit from an array of Student Success support to identify your goals, coach you along the way, and celebrate your wins.</li>
 
 
-<p style="font-size: 13px;">We provide students with the opportunity to learn in real-world scenarios so you'll
-be job-ready when you graduate. Our students learn the skills needed to understand and
-build user-centric interfaces for apps, platforms, and websites that drive real results.
+		<p style="font-size: 13px;">
+			We provide students with the opportunity to learn in real-world scenarios so you'll be job-ready when you graduate. Our students learn the skills needed to understand and build user-centric interfaces for apps, platforms, and websites that drive real results.
+		</p>
 
-</p></pre>
-<img src="img/3dblb.jpg" width="500px;">
+		<img src="img/3dblb.jpg" width="500px;">
 	</div>
+
+
 	<div class="para3">
 		<div class="para4">
-		<h1 style="color:#FFCE3D; font-family:arial verdana;">WHY KGN DESIGN</h1><br>
-		<p style="font-size: 20px; color: white;"> Do you like designing the next generation of software applications? Do you enjoy working with users and multiple stakeholders? Do you enjoy taking complex problems and coming up with simple and elegant solutions? Then the Part-Time UX Design program could be for you.
+			<h1 style="color:#FFCE3D; font-family:arial verdana;">WHY KGN DESIGN</h1><br>
+			<p style="font-size: 20px; color: white;"> 
+				Do you like designing the next generation of software applications? Do you enjoy working with users and multiple stakeholders? Do you enjoy taking complex problems and coming up with simple and elegant solutions? Then the Part-Time UX Design program could be for you.
+			</p>
+		</div>
 
-</p></div>
-<div class="para5">
-	<pre><h3 style="color: white;">More reasons to join this program:</h3>
-<span style="color: white;">You want to use your creativity in the tech economy—or
- want to work remotely as a freelancer, designing for clients
- around the world.
-
-
-You need to get ahead in your career and have a 
-creative mind—or see the future of technology and
-want to be a part of it.
-
-
-You're driven to understand what makes people take 
-action—or help companies solve design problems.
-
-</span></pre></div>
+		<div class="para5">
+			<h3 style="color: white;">More reasons to join this program:</h3>
+			<span style="color: white;">
+				You want to use your creativity in the tech economy—or want to work remotely as a freelancer, designing for clients around the world. You need to get ahead in your career and have a creative mind—or see the future of technology and want to be a part of it. You're driven to understand what makes people take action—or help companies solve design problems.
+			</span>
+		</div>
 	</div>
+
 	<div class="image">
 		<div class="img1">
 			<img src="img/girl.jpg" width="500;">
 		</div>
+
 		<div class="para6">
-			<pre><h1 style="color:#37465A; font-family:arial verdana;">What will I learn?</h1>
+			<h1 style="color:#37465A; font-family:arial verdana;">What will I learn?</h1>
+			<p>
+				In this program, you’ll learn UI design in Figma and participate in a Google Ventures-style design sprint to get a taste of the user-centered design process. You’ll also be exposed to the realistic scenario of ramping up on a team with an existing design system. At the end of the course, you’ll be able to think, speak, and solve problems like an industry professional.
+			</p>
 
-<p>In this program, you’ll learn UI design in Figma and participate
-in a Google Ventures-style design sprint to get a taste of the user-centered 
-design process. You’ll also be exposed to the realistic scenario of ramping up 
-on a team with an existing design system. At the end of the course, you’ll be
-able to think, speak, and solve problems like an industry professional.</p>
+			<h3 style="color:#37465A; font-family:arial verdana;"> Foundation Project</h3>
+			<p>
+				You'll work solo designing a mobile app based on a given problem statement. Every lesson will have an application activity that relates back to this mobile app.
+			</p>
+			<strong>
+				Discovery: Research your users, conduct interviews, and gain insights. Synthesizing: Organize your research data to set yourself up for brainstorming ideas. Wireframing: Begin initial designs on your screens. Patterns: Learn UX concepts that focus on user interactions within your designs. Details: Focus on small details within each screen. Hierarchy: Learn how to visually prioritize your screen content and features. Usability Testing: Test your designs in front of real users. Foundation Conclusion: Turn your foundation project into a case study and write about your first KGN project.
+			</strong>
 
-<h3 style="color:#37465A; font-family:arial verdana;"> Foundation Project</h3>
+			<h3 style="color:#37465A; font-family:arial verdana;">Design Systems Project</h3>
+			<p>
+				Work individually to apply the Material Design system to a 2-week UI design project. Get exposed to the realistic scenario of ramping up on a new team with an existing design system.
+			</p>
 
-<p>You'll work solo designing a mobile app based 
-on a given problem statement. Every lesson will 
-have an application activity that relates back to this mobile app.</p>
+			<h3 style="color:#37465A; font-family:arial verdana;">Collaboration Project</h3>
+			<p>Your final project will be presented at the end of the KGN Design track.</p>
+		</div>
+	</div>
+ -->
+	<!-- <div class="pad">
+		<h1 style="color: #FFCE3D; font-size: 35px;font-family:arial verdana;"> Part-Time KGN Design 24 Weeks</h1>
+		<p style="color:white; font-size: 25px;font-family:arial verdana;">
+			Currently Enrolling for Classes Starting the Week of November 24, 2020 Live classes 2 days a week, Office hours on Friday, Presentations on Saturday
+		</p>
 
-<strong>Discovery: Research your users, conduct interviews, and gain insights.
+		<p style="color: #FFCE3D; font-size: 35px;font-family:arial verdana;"> Cost: $5,500 USD 6-month payment plans are available to qualified students: $833.34 a month with a $500 deposit.</p>
 
-Synthesizing: Organize your research data to set yourself up for brainstorming ideas.
+		<p style="font-size: 20px; color: white;"> Tuition must be paid in full by November 19, 2020.</p>
+	</div>
 
-Wireframing: Begin initial designs on your screens.
-
-Patterns: Learn UX concepts that focus on user interactions within your designs.
-
-Details: Focus on small details within each screen. 
-
-Hierarchy: Learn how to visually prioritize your screen content and features.
-
-Usability Testing: Test your designs in front of real users.
-
-Foundation Conclusion: Turn your foundation project into a case study and write 
-about your first KGN project.</strong>
-
-<h3 style="color:#37465A; font-family:arial verdana;">Design Systems Project</h3>
-<p>Work individually to apply the Material Design
-system to a 2-week UI design project. Get exposed 
-to the realistic scenario of ramping up on a new team 
-with an existing design system.</p>
-
-
-<h3 style="color:#37465A; font-family:arial verdana;">Collaboration Project</h3>
-<p>Your final project will be presented at the end of the KGN Design track.</p></pre></div></div>
-
-<div class="pad">
-	<pre><h1 style="color: #FFCE3D; font-size: 35px;font-family:arial verdana;"> Part-Time KGN Design 24 Weeks</h1>
-<p style="color:white; font-size: 25px;font-family:arial verdana;">Currently Enrolling for Classes Starting the Week of November 24, 2020
-
-Live classes 2 days a week, Office hours on Friday, Presentations on Saturday
-
-<p style="color: #FFCE3D; font-size: 35px;font-family:arial verdana;"> Cost: $5,500 USD
-6-month payment plans are available to qualified students:
-$833.34 a month with a $500 deposit.</p>
-
-<p style="font-size: 20px; color: white;"> Tuition must be paid in full by November 19, 2020.</p></pre>
-</div>
-<div class="last">
-	<strong><center><pre><h3 style="color: #182B49; font-size: 20px;font-family:arial verdana;">KGN SAN DIEGO</h3>
-These programs are offered through UC San Diego Extension: extension.ucsd.edu
-In Partnership with Kenzie Academy
-
-Copyright © 2020. All rights reserved.</pre></center></strong>	
+	<div class="last">
+		<h3 style="color: #182B49; font-size: 20px;font-family:arial verdana;">KGN SAN DIEGO</h3>
+		<p>
+			These programs are offered through UC San Diego Extension: extension.ucsd.edu
+			In Partnership with Kenzie Academy
+		</p>
+		Copyright © 2020. All rights reserved.
+	</div> -->
 
 </body>
 </html>
